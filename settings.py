@@ -4,7 +4,7 @@ from pydantic.v1 import BaseSettings
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Workflow API project"
 
-    DATABASE_URL: str = "sqlite+aiosqlite:///./workflow.db"
+    DATABASE_URL: str = "sqlite:///./workflow.db"
 
     # class Config:
     #     case_sensitive = True
